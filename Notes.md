@@ -19,4 +19,4 @@ name, description, version and all.
 -> It skips all the questions and generate a package.json for you
 -> We can create our own command to run the file by including it in the "scripts" of package.json.We can simply write inside the "scripts" as "Your_Given_Name":"node filename.js" EXAMPLE - "start":"node hello.js"
 -> Now we can run your file by the command: npm start
-
+-> package.json is a configuration file where we add information and dependencies of the project.
