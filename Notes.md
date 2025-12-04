@@ -1,8 +1,6 @@
--> BEFORE NODEJS JAVA CRIPT RUNS ONLY IN THE BROWSER.MANY BROWSERS HAS JAVASCRIPT ENGINE TO EXECUTE THE JAVASCRIPT CODE WE CANT EXECUTE A JAVASCRIPT CODE OUTSIDE OF THE BROWSER BECAUSE
-THAT REQUIRES A JAVASCRIPT ENGINE. SOME OF THE POPULAT JAVASCRIPT ENGINES USED ARE V8 IN GOOGLE, SPIDERMONKEY IN MOZILLA AND APPLE ENGINE IN SAFARI.
+-> Before Node.js, JavaScript ran only in the browser. Many browsers have a JavaScript engine to execute the JavaScript code. We can’t execute JavaScript code outside of the browser because that requires a JavaScript engine. Some of the popular JavaScript engines used are V8 in Google, SpiderMonkey in Mozilla, and Apple engine in Safari.
 
--> ONE PROGRAMMER RYAN DAHL TOOK THE V8 ENGINE AND EMBEDDED IT WITH C++ AND NAMED IT AS NODEJS WHICH HELPS US TO RUN JAVASCRIPT OUTSIDE OF THE BROWSER AND WE CAN CREATE OUR OWN
-WEBSERVER USING NODEJS.IT IS A RUNTIME ENVIORNMENT FOR JAVASCRIPT
+-> One programmer, Ryan Dahl, took the V8 engine and embedded it with C++ and named it as Node.js, which helps us to run JavaScript outside of the browser and we can create our own web server using Node.js. It is a runtime environment for JavaScript.
 
 -> To check whether Nodejs is installed in the device or not we can use the command: node --version or node -v
 -> To use NodeJS we can use the command: node
@@ -16,7 +14,7 @@ WEBSERVER USING NODEJS.IT IS A RUNTIME ENVIORNMENT FOR JAVASCRIPT
 -> It asks you various questions which will help you in making a custom package.json like
 name, description, version and all.
 -> But when we use the command: npm init -y
--> It skips all the questions and generate a package.json for you
+-> It skips all the questions and generate a package.json for you as -y indicates yes to all default options.
 -> We can create our own command to run the file by including it in the "scripts" of package.json.We can simply write inside the "scripts" as "Your_Given_Name":"node filename.js" EXAMPLE - "start":"node hello.js"
 -> Now we can run your file by the command: npm start
 -> package.json is a configuration file where we add information and dependencies of the project.
