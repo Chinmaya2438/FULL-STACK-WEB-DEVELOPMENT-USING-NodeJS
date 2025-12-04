@@ -40,6 +40,23 @@ are installed along with NodeJs.If you are using require("./FileName") it checks
 -> We have to use an encoding technique to get the original data from the file otherwise it will return a buffer
 -> When we use readFileSync() it stops everything untill the file is completely read.It blocks the entire program untill finished.
 -> When we use readFile() it reads the file in background and let other code continue it does not block the entire program.It expects a callback function always and the return type is always void, it does not return anything.
--> Same with writeFileSync(), writeFile() and appendFileSync(), appendFile()
+-> Same with writeFileSync("file_name","data") , writeFile() and appendFileSync(), appendFile()
 -> writeFileSync or any Sync functions are used only in snall one time operations.
 -> writeFile or any async functions are used in backend servers for handling multiple requests.
+
+----------
+-> The architecture of Node.js consists of a client and a server. The client sends a request to the Node.js server. Inside the server, there is an Event Loop that continuously monitors incoming callbacks. The requests are processed through the Event Queue, and the Event Loop manages their execution.
+
+-> The request can be of two types:
+blocking operations and non-blocking operations.
+
+-> If it is a non-blocking operation, it is sent to background workers (Thread Pool or OS Kernel). Once the operation is completed, its callback is placed into the Callback Queue, and the Event Loop pushes it to the call stack when free, then the response is sent back to the client.
+
+-> If it is a blocking operation, it runs directly on the main thread, which can block the Event Loop until it finishes, preventing other requests from being processed.
+
+-> JavaScript is single-threaded, but in Node.js, asynchronous operations are handled by the libuv Thread Pool, which consists of 4 worker threads by default, and the number can be increased according to CPU cores.
+
+-> The Call Stack is where JavaScript executes code line by line.It runs synchronous (blocking) code.Only one function at a time can live at the top of the stack.If the stack is busy → NOTHING ELSE can run.Callback Queue holds async callbacks waiting for their turn.Event Loop connects them.
+
+
+
