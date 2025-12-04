@@ -34,3 +34,12 @@
 are installed along with NodeJs.If you are using require("./FileName") it checks for the file in current directory
 
 ----------
+-> In NodeJs, We have a FileSystem module where we can read, write and append in the files
+-> We can use readFileSync() and readFile() for reading the files
+-> When we use readFileSync("./Output.txt","utf-8")
+-> We have to use an encoding technique to get the original data from the file otherwise it will return a buffer
+-> When we use readFileSync() it stops everything untill the file is completely read.It blocks the entire program untill finished.
+-> When we use readFile() it reads the file in background and let other code continue it does not block the entire program.It expects a callback function always and the return type is always void, it does not return anything.
+-> Same with writeFileSync(), writeFile() and appendFileSync(), appendFile()
+-> writeFileSync or any Sync functions are used only in snall one time operations.
+-> writeFile or any async functions are used in backend servers for handling multiple requests.
