@@ -58,5 +58,7 @@ blocking operations and non-blocking operations.
 
 -> The Call Stack is where JavaScript executes code line by line.It runs synchronous (blocking) code.Only one function at a time can live at the top of the stack.If the stack is busy → NOTHING ELSE can run.Callback Queue holds async callbacks waiting for their turn.Event Loop connects them.
 
+----------
+
 
 
