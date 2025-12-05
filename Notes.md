@@ -59,6 +59,7 @@ blocking operations and non-blocking operations.
 -> The Call Stack is where JavaScript executes code line by line.It runs synchronous (blocking) code.Only one function at a time can live at the top of the stack.If the stack is busy → NOTHING ELSE can run.Callback Queue holds async callbacks waiting for their turn.Event Loop connects them.
 
 ----------
-
+-> NodeJs comes with a inbuilt module called as http which helps to create a server
+using const VariableName = http.createServer((req,res)=>) which takes two parameters request and response. The res.end is used to show the value in the localhost:PortNumber and you can also get what are the headers content in the request by using req.headers. We can use a dedicated port using VariableName.listen(PortNumber).
 
 
